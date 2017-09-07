@@ -1,0 +1,35 @@
+{
+  "name": "github-backups",
+  "version": "0.0.1",
+  "description": "Leverage the Github GraphQL API to easily backup and delete repositories.",
+  "main": "index.js",
+  "scripts": {
+    "fmt": "prettier --single-quote --trailing-comma es5 --no-semi --write \"**/*.js\"",
+    "fmt:precommit": "prettier --single-quote --trailing-comma es5 --no-semi --write",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "fmt:precommit",
+      "git add"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^4.1.3",
+    "prettier": "^1.6.1"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "command-line-commands": "^2.0.1",
+    "command-line-usage": "^4.0.1",
+    "dateformat": "^2.0.0",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "node-fetch": "^1.7.2"
+  }
+}
