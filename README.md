@@ -1,7 +1,5 @@
 # Github Backups
 
-[![node](https://img.shields.io/node/v/gh-badges.svg)]()
-
 A backup and deletion utility that leverages the Github GraphQL API to easily backup and delete repositories. This project is in a very early stage and could change at anytime. Proceed with caution!
 
 > **Note:** This library is only tested on macOS 10.12.x. Use at your own risk.
